@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이효진의 포트폴리오</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css link -->
+</head>
+<body>
+
+    <!-- nav start -->
+	<header class="cd-header">
+		<div class="header-wrapper">
+			<div class="nav-but-wrap">
+				<div class="menu-icon hover-target">
+					<span class="menu-icon__line menu-icon__line-left"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line menu-icon__line-right"></span>
+				</div>					
+			</div>					
+		</div>				
+	</header>
+
+	<div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">home</a></li>
+				<li class="nav__list-item"><a href="about-me.html" class="hover-target">about me</a></li>
+				<li class="nav__list-item"><a href="portfolio.html" class="hover-target">portfolio</a></li>
+				<li class="nav__list-item"><a href="contact.html" class="hover-target">contact</a></li>
+			</ul>
+		</div>
+	</div>		
+
+	
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
+
+<!-- nav end -->
+
+
+
+    <section id="section-01">
+        <div class="main-page">
+            <div class="banner pb-350 pt-300 relative">
+                <div class="shape-wrapper">
+                    <img src="images/myphoto.jpg" alt="내사진" class="main-image-shape img-shape">
+                    <div class="img-shape shape-one" style="visibility: visible;animation-duration: 2.3s;animation-name: fadeInRight;"></div>
+                    <div class="img-shape shape-two"></div>
+                    <div class="img-shape shape-three"></div>
+                    <svg class="img-shape shape-four">
+                        <path fill-rule="evenodd"  fill="rgb(255, 223, 204)"
+                              d="M6.000,12.000 C9.314,12.000 12.000,9.313 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.313 2.686,12.000 6.000,12.000 Z"/>
+                    </svg>
+                    <svg class="img-shape shape-five">
+                        <path fill-rule="evenodd"  fill="rgb(171, 247, 242)"
+                              d="M12.500,25.000 C19.404,25.000 25.000,19.403 25.000,12.500 C25.000,5.596 19.404,-0.000 12.500,-0.000 C5.596,-0.000 -0.000,5.596 -0.000,12.500 C-0.000,19.403 5.596,25.000 12.500,25.000 Z"/>
+                    </svg>
+                    <svg class="img-shape shape-six">
+                        <path fill-rule="evenodd"  fill="rgb(255, 156, 161)"
+                              d="M7.500,15.000 C11.642,15.000 15.000,11.642 15.000,7.500 C15.000,3.358 11.642,-0.000 7.500,-0.000 C3.358,-0.000 -0.000,3.358 -0.000,7.500 C-0.000,11.642 3.358,15.000 7.500,15.000 Z"/>
+                    </svg>
+                    <svg class="img-shape shape-seven">
+                        <path fill-rule="evenodd"  fill="rgb(181, 198, 255)"
+                              d="M6.000,12.000 C9.314,12.000 12.000,9.313 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.313 2.686,12.000 6.000,12.000 Z"/>
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="main-text relative">
+                        <div class="sec01-p">CODE AND CORE</div>
+                        <h1 class="sec01-main-text pb-45">Web Designer <br> 
+                            <span>& Web Publisher</span></h1>
+
+                            <div class="btns">
+                                <a href="contact.html">
+                                    <div class="button_base b03_skewed_slide_in">
+                                        <div>Contact</div>
+                                        <div></div>
+                                        <div>Contact</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <button class="bubbly-button">PORTFOLIO</button>
+                                </a>
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- menu JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script>
+
+// nav JS start
+/* Please ❤ this if you like it! */
+
+
+(function($) { "use strict";
+		
+	//Page cursors
+
+    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px", 
+		t.style.top = n.clientY + "px", 
+		e.style.left = n.clientX + "px", 
+		e.style.top = n.clientY + "px", 
+		i.style.left = n.clientX + "px", 
+		i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+    function n(t) {
+        e.classList.add("hover"), i.classList.add("hover")
+    }
+    function s(t) {
+        e.classList.remove("hover"), i.classList.remove("hover")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+	
+	//Navigation
+
+	var app = function () {
+		var body = undefined;
+		var menu = undefined;
+		var menuItems = undefined;
+		var init = function init() {
+			body = document.querySelector('body');
+			menu = document.querySelector('.menu-icon');
+			menuItems = document.querySelectorAll('.nav__list-item');
+			applyListeners();
+		};
+		var applyListeners = function applyListeners() {
+			menu.addEventListener('click', function () {
+				return toggleClass(body, 'nav-active');
+			});
+		};
+		var toggleClass = function toggleClass(element, stringClass) {
+			if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+		};
+		init();
+	}();
+
+	
+	//Switch light/dark
+	
+})(jQuery); 
+
+// nav JS end
+
+// btn-02 JS start
+        var animateButton = function(e) {
+
+e.preventDefault;
+//reset animation
+e.target.classList.remove('animate');
+
+e.target.classList.add('animate');
+setTimeout(function(){
+  e.target.classList.remove('animate');
+},700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+bubblyButtons[i].addEventListener('click', animateButton, false);
+}
+    </script>
+</body>
+</html>
