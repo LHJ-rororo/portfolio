@@ -1,0 +1,185 @@
+/* banner */
+.pb-700{
+    padding-bottom: 700px;
+}
+.pb-350 {
+    padding-bottom: 350px;
+}
+.pt-300 {
+    padding-top: 300px;
+}
+.pb-45 {
+    padding-bottom: 45px;
+}
+.pd-20{
+    padding: 20px 0;
+}
+.relative {
+    position: relative;
+}
+
+.img-shape {
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1170px;
+    }
+}
+@media (min-width: 768px){
+    .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+}
+
+
+.shape-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main-image-shape {
+    width: 100%;
+    height: auto;
+    top: 5%;
+}
+
+.shape-one {
+    width: 900px;
+    height: 900px;
+    top: -108px;
+    right: -184px;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(134deg, #f1f7ff, #dcd0ff);
+}
+
+.shape-sp-p{
+    top: 10%;
+    left: 10%;
+    animation: animationFramesFour 15s infinite linear;
+}
+
+.shape-two {
+    top: 16%;
+    right: 770px;
+    z-index: 1;
+    background: linear-gradient(321deg, rgba(255,56,153,0.36), rgba(255,139,64,0.36));
+    border-radius: 50%;
+}
+
+.shape-three {
+    width: 378px;
+    height: 378px;
+    bottom: -10%;
+    right: 287px;
+    z-index: 1;
+    background: linear-gradient(321deg, rgba(250,217,97,0.1), rgba(247,107,28,0.1));
+    border-radius: 50%;
+}
+.shape-three-2 {
+    width: 50px;
+    height: 50px;
+    bottom: -10%;
+    right: 287px;
+    z-index: 1;
+    background: linear-gradient(321deg, rgba(250,217,97,0.1), rgba(247,107,28,0.1));
+    border-radius: 50%;
+}
+
+.shape-three-3 {
+    width: 750px;
+    height: 750px;
+    bottom: -15%;
+    right: -50px;
+    z-index: 1;
+    background: linear-gradient(134deg, #c8dcfe, #d3c5ff);
+    border-radius: 50%;
+}
+
+.shape-four {
+    width: 12px;
+    height: 12px;
+    top: 20%;
+    left: 28%;
+    animation: animationFramesOne 25s infinite linear;
+}
+
+
+.shape-five{
+    top: 50%;
+    left: 10%;
+    animation: animationFramesTwo 20s infinite linear alternate;
+}
+
+.shape-six{
+    top: 80%;
+    left: 40%;
+    animation: animationFramesFive 20s infinite linear alternate;
+}
+
+.shape-seven{
+    top: 100%;
+    left: 15%;
+    animation: animationFramesFive 15s infinite linear alternate;
+}
+
+
+
+/* text */
+.main-text-50{
+    font-size: 50px;
+    line-height: 92px;
+}
+
+.main-text.relative {
+    float: right;
+    text-align: end;
+}
+
+.listS{
+    width: 100%;
+    display: flex;
+}
+
+.list .list-2{
+    width: 100%;
+
+}
+ul>li{
+padding: 0 50px;
+text-align: start;
+}
+
+/* section-02 */
+
+.dot-bg{
+    top: 50%;
+    width: 100%;
+    background: url(../images/dot-bg.svg) repeat;
+    padding: 70px 0 90px;
+}
+
+.main-text-2.relative {
+    text-align: center;
+}
+.advantage{
+    display: flex;
+}
+.icon{
+    width: 80px;
+}

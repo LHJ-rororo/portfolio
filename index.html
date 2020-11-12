@@ -29,7 +29,6 @@
 				<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">home</a></li>
 				<li class="nav__list-item"><a href="about-me.html" class="hover-target">about me</a></li>
 				<li class="nav__list-item"><a href="portfolio.html" class="hover-target">portfolio</a></li>
-				<li class="nav__list-item"><a href="contact.html" class="hover-target">contact</a></li>
 			</ul>
 		</div>
 	</div>		
@@ -47,7 +46,7 @@
         <div class="main-page">
             <div class="banner pb-350 pt-300 relative">
                 <div class="shape-wrapper">
-                    <img src="images/myphoto.jpg" alt="내사진" class="main-image-shape img-shape">
+                    <img src="images/myphoto.jpg" alt="내 사진" class="main-image-shape img-shape">
                     <div class="img-shape shape-one" style="visibility: visible;animation-duration: 2.3s;animation-name: fadeInRight;"></div>
                     <div class="img-shape shape-two"></div>
                     <div class="img-shape shape-three"></div>
@@ -75,14 +74,14 @@
                             <span>& Web Publisher</span></h1>
 
                             <div class="btns">
-                                <a href="contact.html">
+                                <a href="about-me.html">
                                     <div class="button_base b03_skewed_slide_in">
-                                        <div>Contact</div>
+                                        <div>ABOUT ME</div>
                                         <div></div>
-                                        <div>Contact</div>
+                                        <div>ABOUT ME</div>
                                     </div>
                                 </a>
-                                <a href="#">
+                                <a href="portfolio.html">
                                     <button class="bubbly-button">PORTFOLIO</button>
                                 </a>
                             </div>
@@ -180,7 +179,7 @@ setTimeout(function(){
 var bubblyButtons = document.getElementsByClassName("bubbly-button");
 
 for (var i = 0; i < bubblyButtons.length; i++) {
-bubblyButtons[i].addEventListener('click', animateButton, false);
+bubblyButtons[i].addEventListener('mouseover', animateButton, false);
 }
     </script>
 </body>

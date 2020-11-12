@@ -1,0 +1,113 @@
+/* banner */
+.pb-350 {
+    padding-bottom: 350px;
+}
+.pt-300 {
+    padding-top: 300px;
+}
+.pb-45 {
+    padding-bottom: 45px;
+}
+.pd-20{
+    padding: 20px 0;
+}
+.relative {
+    position: relative;
+}
+
+.img-shape {
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.shape-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main-image-shape {
+    width: 672px;
+    height: 672px;
+    border-radius: 50%;
+    top: 120px;
+    right: 150px;
+}
+
+.shape-one {
+    width: 900px;
+    height: 700px;
+    top: 15%;
+    right: 5%;
+    z-index: -1;
+    background:rgb(233, 244, 215);
+}
+.shape-two {
+    width: 70px;
+    height: 70px;
+    top: 16%;
+    right: 770px;
+    z-index: 1;
+    background: linear-gradient(321deg, rgba(255,56,153,0.36), rgba(255,139,64,0.36));
+    border-radius: 50%;
+}
+
+.shape-three {
+    width: 378px;
+    height: 378px;
+    bottom: -10%;
+    right: 287px;
+    z-index: 1;
+    background: linear-gradient(321deg, rgba(250,217,97,0.1), rgba(247,107,28,0.1));
+    border-radius: 50%;
+}
+
+.shape-four {
+    width: 12px;
+    height: 12px;
+    top: 20%;
+    left: 28%;
+    animation: animationFramesOne 25s infinite linear;
+}
+
+
+.shape-five{
+    top: 50%;
+    left: 10%;
+    animation: animationFramesOne 15s infinite linear alternate;
+}
+
+.shape-six{
+    top: 80%;
+    left: 40%;
+    animation: animationFramesOne 15s infinite linear alternate;
+}
+
+.shape-seven{
+    top: 100%;
+    left: 15%;
+    animation: animationFramesFive 15s infinite linear alternate;
+}
+
+
+
+/* text */
+.sec01-main-text{
+    font-size: 80px;
+    line-height: 92px;
+}
