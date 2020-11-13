@@ -138,7 +138,15 @@
     animation: animationFramesFive 15s infinite linear alternate;
 }
 
-
+.am-photo{
+    top: 10%;
+    left: 10%;
+    width: 500px;
+    height: 500px;
+    /* background: url(../images/my-photo2.jpg); */
+    background-size: cover;
+    background-position: bottom;
+}
 
 /* text */
 .main-text-50{
@@ -147,19 +155,19 @@
 }
 
 .main-text.relative {
-    float: right;
-    text-align: end;
+    text-align: center;
 }
 
 .listS{
-    width: 100%;
     display: flex;
+    justify-content: flex-end;
 }
 
 .list .list-2{
     width: 100%;
 
 }
+
 ul>li{
 padding: 0 50px;
 text-align: start;
@@ -182,4 +190,17 @@ text-align: start;
 }
 .icon{
     width: 80px;
+}
+.main-text-left{
+    width: 60%;
+    height: auto;
+    top: 10%;
+    margin: 0 auto;
+}
+.list-half{
+    width: 100%;
+    display: flex;
+}
+.img-shape-2{
+    position: absolute;
 }

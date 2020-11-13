@@ -9,7 +9,9 @@ a{
 ul,li{
 	list-style: none;
 }
-
+li.nav__list-item {
+    padding-bottom: 30px;
+}
 
 /* nav css */
 
