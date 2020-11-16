@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/a-link-animation.css">
+
+            <!-- jquery-3.2.1 code -->
+            <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+  <!-- font   -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+<!-- font -->
 </head>
 <body>
         <!-- nav start -->
@@ -328,6 +340,7 @@ Adobe XD를 사용하여 시뮬레이션 했습니다.
                     <div class="sec01-p pb-45">
                         기존의 BMW 사이트를 리뉴얼하여 리디자인하고 재코딩하여 만드는 웹프로젝트입니다. <br>
                         html5, css5, jQuery를 이용해 100% 하드코딩으로 작업을 진행 중입니다.
+                        
                     </div>
                     <div class="btns">
                         <a href="#" class="btn-a" target="_blank"><div class="btn btn-8"> 사이트 바로가기</div> </a>
@@ -366,8 +379,52 @@ Adobe XD를 사용하여 시뮬레이션 했습니다.
                         포토샵과 일러스트를 이용하여 배너 및 상세페이지를 제작하였습니다 <br>
                     </div>
                     <div class="btns">
-                        <a href="#" class="btn-a" target="_blank"><div class="btn btn-9"> 디자인 확인하기</div> </a>
+                        <a href="#modal-btn-1" class="btn-a" id="modal-btn-1"><div class="btn btn-9"> 배너 디자인 보기</div> </a>
+                        <a href="#modal-btn-2" class="btn-a" id="modal-btn-2"><div class="btn btn-9"> 상세페이지 디자인 보기</div> </a>
                     </div>
+        <!-- The Modal -->
+            <div id="myModal-1" class="modal">
+        <!-- Modal content -->
+                <div class="modal-content">
+                    <!-- close btn 01 -->
+                    <div class="circCont"><button class="circle fromMiddle" data-animation="magnify" data-remove="3000" onlick="close_pop();">
+                        <span></span>
+                      </button>
+                    </div>
+
+                        <h1>새해맞이 할인쿠폰 증정 이벤트 배너</h1>
+                        <img src="images/banner (1).jpg" alt="새해맞이 할인쿠폰증정 배너">
+                        <h1>보톡스+필러 이벤트 배너</h1>
+                        <img src="images/banner (2).jpg" alt="필톡스 이벤트 배너">
+                        <h1>탄산음료 균일가 세일 배너</h1>
+                        <img src="images/banner (3).jpg" alt="탄산음료 균일가 세일 배너">
+                        <h1>혼술 상품 세일 이벤트 배너</h1>
+                        <img src="images/banner (4).jpg" alt="혼술 상품 할인 이벤트 배너 이미지">
+                        <button class="fill" onclick="close_pop();">
+                            CLOSE
+                        </button>
+                </div>
+            </div>
+        <!-- End Modal -->
+        <!-- The Modal -->
+        <div id="myModal-2" class="modal">
+            <!-- Modal content -->
+                    <div class="modal-content">
+                    <!-- close btn 01 -->
+                    <div class="circCont"><button class="circle fromMiddle" data-animation="magnify" data-remove="3000" onlick="close_pop();">
+                        <span></span>
+                      </button>
+                    </div>
+                            <h1>상세페이지 디자인</h1>
+                            <img src="images/page-(1).jpg" alt="에뛰드하우스-치크-상세페이지">
+                                <button class="fill" onclick="close_pop();">
+                                    CLOSE
+                                </button>
+                                
+                    </div>
+                </div>
+            <!-- End Modal -->
+        
                 </div>
             </div>
         </div>
@@ -443,6 +500,70 @@ var app = function () {
 
 // nav JS end
 
+$(function(){
+        $('#modal-btn-1').click(function(){
+            $('#myModal-1').show();
+            $('body').css("overflow", "hidden");
+        });
+    });
+    //팝업 close 가능
+    function close_pop(flag){
+        $("#myModal-1").hide();
+        $('body').css("overflow", "auto");
+    };
+
+    $(function(){
+        $('#modal-btn-2').click(function(){
+            $('#myModal-2').show();
+            $('body').css("overflow", "hidden");
+        });
+    });
+    //팝업 close 가능
+    function close_pop(flag){
+        $("#myModal-1").fadeOut(500, function(){
+        $("#myModal-1").hide();
+        $('body').css("overflow", "auto");
+        $("#myModal-2").hide();
+        $('body').css("overflow", "auto");
+	});
+    
+    };
+
+
+    $(".circle").click(function () {
+	$("#myModal-1").fadeOut(500, function(){
+        $("#myModal-1").hide();
+        $('body').css("overflow", "auto");
+        $("#myModal-2").hide();
+        $('body').css("overflow", "auto");
+	}); 
+});
+
+$(".circle").click(function () {
+	$("#myModal-2").fadeOut(500, function(){
+        $("#myModal-1").hide();
+        $('body').css("overflow", "auto");
+        $("#myModal-2").hide();
+        $('body').css("overflow", "auto");
+	}); 
+});
+
+    // btn 01 animation
+    $('.circle').on('click',function(){
+  var animClass = $(this).data('animation');
+  var removeTime = $(this).data('remove');
+  if($(this).hasClass(animClass)){
+     $(this).removeClass(animClass);
+  }else{
+    $(this).addClass(animClass);
+    if(typeof removeTime != 'undefined'){
+      var el = $(this);
+       setTimeout(function(){
+         el.removeClass(animClass);
+       },removeTime);
+    }
+  }
+});
 </script>
 </body>
 </html>
