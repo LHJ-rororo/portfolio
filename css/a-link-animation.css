@@ -23,6 +23,7 @@
 
 .btn:before {
   content: "→";
+  font-size: 30px;
   transition: all ease .5s;
   position:relative;
 /*   left:-5px; */

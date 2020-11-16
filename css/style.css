@@ -122,7 +122,7 @@ span{
 
 
 .sec01-main-text{
-    font-size: 80px;
+    font-size: 72px;
     line-height: 92px;
 }
 
@@ -505,6 +505,7 @@ span{
     }
 }
 /* animation end */
+/* 미디어 쿼리 설정 */
 /* Device = 랩탑, 데스크탑 */
 @media(max-width:1280px){
   .main-image-shape {
@@ -533,7 +534,7 @@ span{
     padding-top: 480px;
 }
 .sec01-main-text {
-  font-size: 65px;
+  font-size: 60px;
   line-height: 72px;
 }
 .btns {
