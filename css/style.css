@@ -37,6 +37,7 @@ overflow: hidden;
     }
 }
 
+/* text css */
 span{
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
@@ -44,6 +45,16 @@ span{
 .sky-color{
   font-weight: bold;
   color: rgba(255,56,153,0.36);
+}
+
+::selection { background-color: #C3CFE2; }
+
+.name {
+  text-transform: uppercase;
+  background: linear-gradient(to right,rgb(255,182,139) 0%,rgb(255,96,139) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
 }
 
 /* 모양시작 */
@@ -528,7 +539,12 @@ span{
 .btns {
   margin-left: 19%;
 }
-  
+#section-01{
+  overflow: inherit;
+  }
+  .pb-350 {
+    padding-bottom: 40px;
+}
 }
 
 /* Device = 대부분의 스마트폰 모바일 기기(세로) */
@@ -547,8 +563,14 @@ span{
     text-align: center;
 }
 .btns {
-  justify-content: flex-start;
-  margin-left: 10%;
+  width: 100%;
+  margin: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btns a {
+margin-left: 0;
 }
 img.main-image-shape.img-shape {
   width: 450px;
@@ -565,5 +587,49 @@ img.main-image-shape.img-shape {
 }
 .pb-350 {
   padding-bottom: 50px;
+}
+.menu-icon {
+  left: 75%;
+}
+.nav__list-item {
+  font-size: 5vh;
+}
+}
+
+@media(max-width:400px){
+  .btns {
+    width: 100%;
+    margin: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btns a {
+  margin-left: 0;
+}
+.nav__list-item {
+  font-size: 5vh;
+}
+}
+
+@media(max-width:300px){
+  .menu-icon {
+    left: 60%;
+    padding: 10px 10px 5px 10px;
+    background: linear-gradient( -90deg, rgb(255,96,139,3) 0%, rgb(255,182,139,3) 100%);
+    border-radius: 50%;
+}
+  .btns {
+    width: 100%;
+    margin: none;
+}
+.btns a {
+  margin-left: 0;
+}
+a {
+  margin: 20px auto;
+}
+.nav__list-item {
+  font-size: 5vh;
 }
 }
