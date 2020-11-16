@@ -37,6 +37,17 @@ overflow: hidden;
     }
 }
 
+span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
+.sky-color{
+  font-weight: bold;
+  color: rgba(255,56,153,0.36);
+}
+
+/* 모양시작 */
+
 .shape-wrapper {
     position: absolute;
     width: 100%;
@@ -483,3 +494,76 @@ overflow: hidden;
     }
 }
 /* animation end */
+/* Device = 랩탑, 데스크탑 */
+@media(max-width:1280px){
+  .main-image-shape {
+    width: 500px;
+    height: 500px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.shape-one {
+  width: 800px;
+  height: 800px;
+}
+
+}
+/*Device = 태블릿, 아이패드(세로)*/
+@media(max-width:1024px){
+  .pt-300 {
+    padding-top: 400px;
+}
+  
+}
+/* 저해상도 태블릿, 모바일(가로) */
+@media(max-width:767px){
+  .pt-300 {
+    padding-top: 480px;
+}
+.sec01-main-text {
+  font-size: 65px;
+  line-height: 72px;
+}
+.btns {
+  margin-left: 19%;
+}
+  
+}
+
+/* Device = 대부분의 스마트폰 모바일 기기(세로) */
+@media(max-width:500px){
+  #section-01{
+    width: 100%;
+    height: 100vh;
+    overflow: inherit;
+    }
+  .main-image-shape{
+    position: relative;
+    left: 0;
+  }
+  .main-text.relative {
+    right: 3%;
+    text-align: center;
+}
+.btns {
+  justify-content: flex-start;
+  margin-left: 10%;
+}
+img.main-image-shape.img-shape {
+  width: 450px;
+  height: 450px;
+}
+.img-shape.shape-one {
+  top: -50px;
+  right: -105px;
+  width: 500px;
+  height: 500px;
+}
+.pt-300 {
+  padding-top: 550px;
+}
+.pb-350 {
+  padding-bottom: 50px;
+}
+}

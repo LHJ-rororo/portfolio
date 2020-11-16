@@ -63,18 +63,20 @@
     height: 700px;
     top: 15%;
     right: 5%;
-    background: url(../images/site-01.jpg);
+    background: url(../images/site-01-1.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.site-01:hover{
+    background-color: 0 ;
+}
 .site-02{
     width: 800px;
     height: 700px;
     top: 15%;
     right: 5%;
-    background: url(../images/site-02.jpg);
+    background: url(../images/site-02-1.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,7 +98,7 @@
     height: 700px;
     top: 15%;
     right: 5%;
-    background: url(../images/site-04.jpg);
+    background: url(../images/site-04-1.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +109,7 @@
     height: 700px;
     top: 15%;
     right: 5%;
-    background: url(../images/site-05.jpg);
+    background: url(../images/site-05-1.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,7 +120,7 @@
     height: 700px;
     top: 15%;
     right: 5%;
-    background: url(../);
+    background: url(../images/site-06-1.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +131,7 @@
     height: 700px;
     top: 15%;
     right: 5%;
-    background: url(../);
+    background: url(../images/site-07.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,7 +142,7 @@
     height: 700px;
     top: 15%;
     right: 5%;
-    background: url(../);
+    background: url(../images/site-08.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
