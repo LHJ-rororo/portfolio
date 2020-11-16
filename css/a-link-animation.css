@@ -15,6 +15,7 @@
   letter-spacing: 3px;
   position: relative;
   left:-15px;
+  display: inline-block;
 }
 
 .btn:hover {
