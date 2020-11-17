@@ -407,8 +407,7 @@ Adobe XD를 사용하여 시뮬레이션 했습니다.
                         <img src="images/banner (3).jpg" alt="탄산음료 균일가 세일 배너">
                         <h1>혼술 상품 세일 이벤트 배너</h1>
                         <img src="images/banner (4).jpg" alt="혼술 상품 할인 이벤트 배너 이미지">
-                        <button class="fill" onclick="close_pop();">
-                            CLOSE
+                        <button class="fill" onclick="close_pop();">CLOSE
                         </button>
                 </div>
             </div>
@@ -422,7 +421,7 @@ Adobe XD를 사용하여 시뮬레이션 했습니다.
                         <span></span>
                       </button>
                     </div>
-                            <h1>상세페이지 디자인</h1>
+                            <h1 style="text-align: center;">에뛰드 하우스 러블리 쿠키 블러셔 <br> 상세페이지 디자인</h1>
                             <img src="images/page-(1).jpg" alt="에뛰드하우스-치크-상세페이지">
                                 <button class="fill" onclick="close_pop();">
                                     CLOSE
@@ -507,49 +506,49 @@ var app = function () {
 
 // nav JS end
 
+// modal-fadeIn
 $(function(){
         $('#modal-btn-1').click(function(){
-            $('#myModal-1').show();
-            $('body').css("overflow", "hidden");
+            $('#myModal-1').fadeIn(500,function(){
+                $('#myModal-1').show();
+                $('body').css("overflow", "hidden");
+            });
         });
     });
-    //팝업 close 가능
-    function close_pop(flag){
-        $("#myModal-1").hide();
-        $('body').css("overflow", "auto");
-    };
-
     $(function(){
         $('#modal-btn-2').click(function(){
-            $('#myModal-2').show();
-            $('body').css("overflow", "hidden");
+            $('#myModal-2').fadeIn(500,function(){
+                $('#myModal-2').show();
+                $('body').css("overflow", "hidden");
+            });
         });
     });
-    //팝업 close 가능
-    function close_pop(flag){
-        $("#myModal-1").fadeOut(500, function(){
+
+
+// modal-fadeOut
+    $(".fill").click(function () {
+	$("#myModal-1").fadeOut(500, function(){
         $("#myModal-1").hide();
         $('body').css("overflow", "auto");
+	}); 
+});
+
+$(".fill").click(function () {
+	$("#myModal-2").fadeOut(500, function(){
         $("#myModal-2").hide();
         $('body').css("overflow", "auto");
-	});
-    
-    };
-
+	}); 
+});
 
     $(".circle").click(function () {
 	$("#myModal-1").fadeOut(500, function(){
         $("#myModal-1").hide();
-        $('body').css("overflow", "auto");
-        $("#myModal-2").hide();
         $('body').css("overflow", "auto");
 	}); 
 });
 
 $(".circle").click(function () {
 	$("#myModal-2").fadeOut(500, function(){
-        $("#myModal-1").hide();
-        $('body').css("overflow", "auto");
         $("#myModal-2").hide();
         $('body').css("overflow", "auto");
 	}); 

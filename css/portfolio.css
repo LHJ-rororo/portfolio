@@ -336,7 +336,9 @@ section#section09 {
     .main-text.relative {
         padding: 0 20px;
     }
-
+    .modal-content img{
+      width: 100%;
+  }
 }
 
 /* Device = 대부분의 스마트폰 모바일 기기(세로) */
