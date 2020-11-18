@@ -313,8 +313,8 @@ section#section09 {
 @media(max-width:767px){
 
     section#section01,section#section02,section#section03,section#section04,section#section05,section#section06,section#section07,section#section08,section#section09 {
-        padding-top: 5vh;
-        padding-bottom: 85vh;
+      padding-top: 10vh;
+      padding-bottom: 110vh;
     }
 
     .site-01, .site-02, .site-03, .site-04, .site-05, .site-06, .site-07, .site-08, .site-09 {
@@ -371,7 +371,18 @@ margin-left: 0;
 .nav__list-item {
   font-size: 5vh;
 }
+
+.btns>a {
+  margin: 25px 0;
 }
+
+.btns.aos-init.aos-animate {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+
 
 @media(max-width:400px){
 
