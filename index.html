@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="이효진 개인사이트"/>
     <meta property="og:description" content="알록달록한 여러 색을 지닌 웹디자이너 & 웹퍼블리셔 이효진"/>
-    <meta property="og:image" content="images/meta.jpg">
+    <meta property="og:image" content="메타jpg">
     <link rel="shortcut icon" href="images/meta-logo.png" />
     <link rel="apple-touch-icon" href="images/meta-logo.ico"/>
 <!-- 메타설정 -->
@@ -19,8 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-<!-- wow.js -->
-<link rel="stylesheet" href="css/animate.css">
+<!-- aos.js -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -83,7 +83,7 @@
                 </div>
                 <div class="container">
                     <div class="main-text relative">
-                        <div class="aoa-text-box wow fadeIn">
+                        <div class="aoa-text-box" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="-300">
                             <div class="sec01-p" >
                                 Coding and design</div>
                             <h1 class="sec01-main-text sec01-01">Web Designer </h1>
@@ -97,15 +97,16 @@
 
 
 
-                            <div class="btns wow fadeInUp">
-                                <a href="about-me.html wow fadeInUp">
+                            <div class="btns" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-offset="-450">
+                                <a href="about-me.html">
                                     <div class="button_base b03_skewed_slide_in">
                                         <div>ABOUT ME</div>
                                         <div></div>
                                         <div>ABOUT ME</div>
                                     </div>
                                 </a>
-                                <a href="portfolio.html wow fadeInUp">
+                                <a href="portfolio.html">
                                     <button class="bubbly-button">PORTFOLIO</button>
                                 </a>
                             </div>
@@ -122,13 +123,13 @@
 <!-- menu JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-<!-- wow.JS -->
-<script src="js/wow.min.js"></script>
+<!-- aos.JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <script>
-// wow JS
-new WOW().init();
+// AOS JS
+AOS.init();
 
 
 // nav JS start

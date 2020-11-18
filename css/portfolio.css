@@ -74,43 +74,47 @@ section#section01 {
 }
 section#section02 {
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-bottom: 20vh;
 }
 section#section03 {
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-bottom: 20vh;
 }
 section#section04 {
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-bottom: 20vh;
 }
 section#section05 {
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-bottom: 20vh;
 }
 section#section06 {
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-bottom: 20vh;
 }
 section#section07 {
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-bottom: 30vh;
 }
 section#section08 {
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-bottom: 40vh;
 }
 section#section09 {
     width: 100%;
-    padding-top: 10vh;
-    padding-bottom: 30vh;
+    padding-bottom: 20vh;
+}
+
+.main-page {
+  width: 100%;
+  height: 65vh;
 }
 
 .main-text.relative {
@@ -119,8 +123,8 @@ section#section09 {
 /* 사이트 목업 */
 .site-01{
     width: 800px;
-    height: 700px;
-    top: 0vh;
+    height: 500px;
+    top: 10vh;
     right: 5%;
     background: url(../images/site-01-1.jpg);
     background-size: 100%;
@@ -132,8 +136,8 @@ section#section09 {
 }
 .site-02{
     width: 800px;
-    height: 700px;
-    top: 15%;
+    height: 500px;
+    top: 10vh;;
     right: 5%;
     background: url(../images/site-02-1.jpg);
     background-size: 100%;
@@ -143,8 +147,8 @@ section#section09 {
 
 .site-03{
     width: 800px;
-    height: 700px;
-    top: 15%;
+    height: 500px;
+    top: 10vh;
     right: 5%;
     background: url(../images/site-03.jpg);
     background-size: 100%;
@@ -154,8 +158,8 @@ section#section09 {
 
 .site-04{
     width: 800px;
-    height: 700px;
-    top: 15%;
+    height: 500px;
+    top: 10vh;
     right: 5%;
     background: url(../images/site-04-1.jpg);
     background-size: 100%;
@@ -165,8 +169,8 @@ section#section09 {
 
 .site-05{
     width: 800px;
-    height: 700px;
-    top: 15%;
+    height: 500px;
+    top: 10vh;
     right: 5%;
     background: url(../images/site-05-1.jpg);
     background-size: 100%;
@@ -176,8 +180,8 @@ section#section09 {
 
 .site-06{
     width: 800px;
-    height: 700px;
-    top: 15%;
+    height: 500px;
+    top: 10vh;
     right: 5%;
     background: url(../images/site-06-1.jpg);
     background-size: 100%;
@@ -187,8 +191,8 @@ section#section09 {
 
 .site-07{
     width: 800px;
-    height: 700px;
-    top: 15%;
+    height: 500px;
+    top: 10vh;
     right: 5%;
     background: url(../images/site-07-ready.jpg);
     background-size: 100%;
@@ -198,8 +202,8 @@ section#section09 {
 
 .site-08{
     width: 800px;
-    height: 700px;
-    top: 15%;
+    height: 500px;
+    top: 10vh;
     right: 5%;
     background: url(../images/site-08-ready.jpg);
     background-size: 100%;
@@ -209,8 +213,8 @@ section#section09 {
 
 .site-09{
     width: 800px;
-    height: 700px;
-    top: 15%;
+    height: 500px;
+    top: 10vh;
     right: 5%;
     background: url(../images/site-09.jpg);
     background-size: 100%;
