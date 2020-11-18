@@ -42,14 +42,12 @@ span{
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
 }
-.sky-color{
-  font-weight: bold;
-  color: rgba(255,56,153,0.36);
-}
+
 
 ::selection { background-color: #C3CFE2; }
 
 .name {
+  font-weight: bold;
   text-transform: uppercase;
   background: linear-gradient(to right,rgb(255,182,139) 0%,rgb(255,96,139) 100%);
   -webkit-background-clip: text;

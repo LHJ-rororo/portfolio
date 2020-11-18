@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!-- 메타설정 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="이효진 개인사이트"/>
+    <meta property="og:description" content="알록달록한 여러 색을 지닌 웹디자이너 & 웹퍼블리셔 이효진"/>
+    <meta property="og:image" content="images/meta.jpg">
+    <link rel="shortcut icon" href="images/meta-logo.png" />
+    <link rel="apple-touch-icon" href="images/meta-logo.ico"/>
+<!-- 메타설정 -->
     <title>이효진의 포트폴리오</title>
+    <!-- css link -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- css link -->
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-<!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+<!-- wow.js -->
+<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 
@@ -51,10 +60,10 @@
         <div class="main-page">
             <div class="banner pb-350 pt-300 relative">
                 <div class="shape-wrapper">
-                    <img src="images/myphoto.jpg" alt="내 사진" class="main-image-shape img-shape">
-                    <div class="img-shape shape-one" style="visibility: visible;animation-duration: 2.3s;animation-name: fadeInRight;"></div>
-                    <div class="img-shape shape-two"></div>
-                    <div class="img-shape shape-three"></div>
+                    <img src="images/myphoto.jpg" alt="내 사진" class="main-image-shape img-shape" data-aos="fade-down" data-aos-duration="1600">
+                    <div class="img-shape shape-one"  data-aos="fade-left" data-aos-duration="2000"></div>
+                    <div class="img-shape shape-two" data-aos="zoom-in" data-aos-duration="3000"></div>
+                    <div class="img-shape shape-three" data-aos="zoom-in"data-aos-duration="1800"></div>
                     <svg class="img-shape shape-four">
                         <path fill-rule="evenodd"  fill="rgb(255, 223, 204)"
                               d="M6.000,12.000 C9.314,12.000 12.000,9.313 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.313 2.686,12.000 6.000,12.000 Z"/>
@@ -74,23 +83,29 @@
                 </div>
                 <div class="container">
                     <div class="main-text relative">
-                        <div class="sec01-p">
-                            Coding and design</div>
-                        <h1 class="sec01-main-text pb-45">Web Designer <br> 
-                            <span>& Web Publisher</span>
-                        <br> <span class="sky-color name">
-                            Lee Hyo Jin
-                        </span> </h1>
+                        <div class="aoa-text-box wow fadeIn">
+                            <div class="sec01-p" >
+                                Coding and design</div>
+                            <h1 class="sec01-main-text sec01-01">Web Designer </h1>
+                            <h1 class="sec01-main-text "><span>& Web Publisher</span> </h1>
+                            <h1 class="sec01-main-text pb-45">
+                                <span class="name">
+                                    Lee Hyo Jin
+                                </span> 
+                            </h1>
+                        </div>
 
-                            <div class="btns">
-                                <a href="about-me.html">
+
+
+                            <div class="btns wow fadeInUp">
+                                <a href="about-me.html wow fadeInUp">
                                     <div class="button_base b03_skewed_slide_in">
                                         <div>ABOUT ME</div>
                                         <div></div>
                                         <div>ABOUT ME</div>
                                     </div>
                                 </a>
-                                <a href="portfolio.html">
+                                <a href="portfolio.html wow fadeInUp">
                                     <button class="bubbly-button">PORTFOLIO</button>
                                 </a>
                             </div>
@@ -107,7 +122,14 @@
 <!-- menu JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
+<!-- wow.JS -->
+<script src="js/wow.min.js"></script>
+
+
     <script>
+// wow JS
+new WOW().init();
+
 
 // nav JS start
 /* Please ❤ this if you like it! */
@@ -190,6 +212,9 @@ var bubblyButtons = document.getElementsByClassName("bubbly-button");
 for (var i = 0; i < bubblyButtons.length; i++) {
 bubblyButtons[i].addEventListener('mouseover', animateButton, false);
 }
+
+// text-animation
+
     </script>
 </body>
 </html>
