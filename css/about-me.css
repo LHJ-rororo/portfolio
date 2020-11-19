@@ -27,6 +27,12 @@ p {
     position: absolute;
 }
 
+.flex-aline{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -380,6 +386,14 @@ section#section-03 {
   .nav__list-item {
     font-size: 5vh;
   }
+
+  .container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
   }
   
   @media(max-width:450px){

@@ -7,6 +7,12 @@ p{
 .size-small{
     font-size: 14px;
 }
+
+.flex-aline{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* banner */
 /* .pb-350 {
     padding-bottom: 250px;
@@ -69,46 +75,47 @@ p{
 section#section01 {
     width: 100%;
     padding-top: 10vh;
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
 
 }
 section#section02 {
     width: 100%;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 section#section03 {
     width: 100%;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 section#section04 {
     width: 100%;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 section#section05 {
     width: 100%;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 section#section06 {
     width: 100%;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 section#section07 {
     width: 100%;
-    padding-top: 20vh;
-    padding-bottom: 30vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 section#section08 {
     width: 100%;
-    padding-top: 20vh;
-    padding-bottom: 40vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 section#section09 {
     width: 100%;
+    padding-top: 10vh;
     padding-bottom: 20vh;
 }
 
@@ -274,8 +281,8 @@ section#section09 {
 
 /* text */
 .sec01-main-text{
-    font-size: 72px;
-    line-height: 82px;
+    font-size: 52px;
+    line-height: 62px;
 }
 
 
