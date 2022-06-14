@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+
+/****************
+***** common ****
+****************/
+
+
+.fltL{
+  float:left;
+}
+.fltR{
+  float:right !important;
+}
+
+
+/* scroll disable */
+.hdd{
+    overflow: hidden !important;
+    touch-action: none;
+}
+
+
+/* clear */
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* text */
+.ell{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: inherit;
+}
+.ell.line2{
+    white-space: normal !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    word-wrap: break-word !important;
+}
+.taL{
+  text-align: left !important;
+}
+.taC{
+  text-align: center !important;
+}
+.taR{
+  text-align: right !important;
+}
+th.ell,
+td.ell{
+    display: table-cell;
+}
+.brk{
+    word-break: break-all;
+}
+::placeholder{
+    color: #bbb;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+::-webkit-input-placeholder{
+    color: #bbb;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+:-ms-input-placeholder{
+    color: #bbb;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+::-ms-input-placeholder{
+    color: #bbb;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+::selection{
+    color: #000;
+    background: #FFBD39;
+}
+
+
+
+/* select */
+.slctBoxJq {
+    display: inline-block;
+}
+.slctBoxJq .ui-button{
+    height: 36px;
+    padding: 0 10px;
+    color: #666;
+    font-size: 14px;
+    line-height: 36px;
+    vertical-align: middle;
+    border: 1px solid #d5dae2;
+    border-radius: 8px;
+    background: #fff;
+}
+.slctBoxJq .ui-button .ui-selectmenu-text{
+    color: #bbb;
+    line-height: 36px;
+}
+.slctBoxJq.data .ui-button .ui-selectmenu-text{
+    color: #666;
+    font-weight: 400;
+}
+.slctBoxJq .ui-button .ui-icon,
+.slctBoxJq .ui-button:hover .ui-icon,
+.slctBoxJq .ui-button:focus .ui-icon{
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+	background: transparent url('../images/sprite.png') no-repeat -30px -60px;
+}
+.slctBoxJq .ui-button.ui-selectmenu-button-open .ui-icon{
+    background-position: -30px -80px;
+}
+
+
+/* select - jqeury-ui */
+.ui-selectmenu-menu .ui-menu{
+    position: absolute;
+    top: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    border: 0;
+    border-radius: 12px;
+}
+.ui-selectmenu-menu .ui-menu .ui-menu-item-wrapper{
+	padding: 0 10px;
+    padding-right: 25px;
+    color: #888;
+    font-size: 14px;
+    line-height: 30px;
+}
+.ui-selectmenu-menu .ui-menu .ui-state-focus,
+.ui-selectmenu-menu .ui-menu .ui-state-active {
+    margin: 0;
+}
+.ui-selectmenu-menu .ui-state-active, .ui-widget-content .ui-state-active {
+	background: #eee;
+    border: 0;
+}
+
+
+
+
+/* input & button */
+input[type=text],
+input[type=password],
+input[type=file],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=time],
+input[type=date],
+input[type=week],
+input[type=month],
+input[type=datetime-local],
+input[type=search],
+input[type=url],
+input[type=color],
+select,
+input{
+  height: 36px;
+  padding: 0 10px;
+  color: #666;
+  font-size: 14px;
+  line-height: 36px;
+  vertical-align: middle;
+  border: 1px solid #d5dae2;
+  border-radius: 8px;
+  background: #fff;
+}
+::placeholder{
+    color: #bbb;
+    font-size: 13px;
+}
+::-webkit-input-placeholder{
+  color: #bbb;
+}
+:-ms-input-placeholder{
+  color: #bbb;
+}
+::-ms-input-placeholder{
+  color: #bbb;
+}
+select{
+  padding: 0 0 0 5px;
+}
+input[readonly],
+pre.rdonly{
+  background: #e6e6e6;
+}
+
+input[type=file]{
+    padding-left: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+input[type=color]{
+    width: 35px;
+    cursor: pointer;
+}
+input[type=submit],
+input[type=reset],
+input[type=button]{
+    min-width: 100px;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background: #607d8b;
+    border-radius: 3px;
+}
+textarea{
+    width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    overflow: auto;
+    background: #fff;
+    border: 1px solid #d5dae2;
+    border-radius: 6px;
+    resize: none;
+}
+pre{
+  white-space:pre-line;
+  line-height: 20px;
+  color: #6a6a6a;
+}
+
+/* check/radio */
+.chkBox,
+.rdoBox {
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.chkBox.txtN,
+.rdoBox.txtN {
+    width: 24px;
+    height: 24px;    
+}
+.chkBox label,
+.rdoBox label{
+    padding-left: 29px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.chkBox>input.ipt,
+.rdoBox>input.ipt{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 12px);
+    background: none;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.chkBox:before,
+.rdoBox:before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 12px);
+    display: block;
+    background: url('../images/sprite.png')no-repeat;
+    background-position: -90px -60px;
+}
+.chkBox.on:before{
+    background-position: -90px -84px;
+}
+.rdoBox:before{
+    background-position: -124px -60px;
+}
+.rdoBox.on:before{
+    background-position: -124px -84px;
+}
+
+
+/* dateRgBox */
+.dateRgBox{
+    display: inline-block;
+    position: relative;
+}
+.dateRgBox .val{
+    width: 100%;
+    height: 36px;
+    color: #bbb;
+    font-size: 14px;
+    cursor: pointer;
+}
+.dateRgBox.data .val{
+    color: #666;
+    font-weight: 500;
+}
+.dateRgBox .val.ico{
+    width: 250px;
+    padding-right: 30px;
+    background: url('../images/ico_date.png')no-repeat right 13px center;
+}
+.dateRgBox.Sg .val{
+    width: 160px;
+}
+.dateParent{
+    position: relative;
+}
+.daterangepicker select {
+    border: 0;
+    box-shadow: none;
+}
+.daterangepicker .calendar-table th{
+    color: #A7AFBB;
+    font-size: 15px;
+    font-weight: 500;
+}
+.daterangepicker .calendar-table th.month{
+    color: #4285F4;
+}
+.daterangepicker .calendar-table td {
+    font-size: 14px;
+    font-weight: 300;
+}
+.daterangepicker .calendar-table .next span,
+.daterangepicker .calendar-table .prev span{
+    border-color: #FFBD39;
+}
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background: #4285F4;
+}
+.daterangepicker .drp-buttons .btn {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    background: #4285F4;
+    border-radius: 30px;
+    transition: ease 0.2s;
+}
+.daterangepicker .drp-buttons .btn:hover {
+    color: #333;
+    background: #FFBD39;
+}
+.dateTwin {
+    width: 100%;
+}
+.dateTwin .hpn {
+    margin: 0 5px;
+}
+
+
+/* paging */
+.paging {
+    margin: 50px 0;
+}
+.paging ul {
+    display: flex;
+    justify-content: center;
+}
+.paging ul li {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.paging ul li:last-child {
+    margin-right: 0;
+}
+.paging ul li a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: #666;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.paging ul li a:hover {
+    color: #4285F4;
+}
+.paging ul li.on a {
+    color: #4285F4;
+    font-weight: 700;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.paging ul li.btnMv a {
+    background: #D5DAE2;
+    text-indent: -999em;
+}
+.paging ul li.btnMv.first a {
+    background: #D5DAE2 url('../images/sprite.png')no-repeat -60px -120px;
+}
+.paging ul li.btnMv.last a {
+    background: #D5DAE2 url('../images/sprite.png')no-repeat -90px -120px;
+}
+.paging ul li.btnMv.pre a {
+    background: #D5DAE2 url('../images/sprite.png')no-repeat 0px -120px;
+}
+.paging ul li.btnMv.next a {
+    background: #D5DAE2 url('../images/sprite.png')no-repeat -30px -120px;
+}
+.paging ul li.btnMv.first a:hover {
+    background: #FFBD39 url('../images/sprite.png')no-repeat -60px -150px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.paging ul li.btnMv.last a:hover {
+    background: #FFBD39 url('../images/sprite.png')no-repeat -90px -150px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.paging ul li.btnMv.pre a:hover {
+    background: #FFBD39 url('../images/sprite.png')no-repeat 0px -150px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.paging ul li.btnMv.next a:hover {
+    background: #FFBD39 url('../images/sprite.png')no-repeat -30px -150px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/****************
+**** popup ****
+****************/
+body.popup {
+    min-width: inherit;
+}
+.popWrap {
+    width: 100%;
+    height: 100%;
+}
+.popWrap .popTit {
+    padding: 0 20px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    background: #4285F4;
+}
+.popWrap .popConWrap {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.popWrap .btnWrap {
+    margin: 0;
+    margin-top: 40px;
+}
+.popWrap .btnWrap button {
+    height: 40px;
+}
+
+/* .fixBG */
+.fixBG{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0,0.65);
+    z-index: 10000;
+}
+.fixCont{
+    z-index: 10001 !important;
+}
